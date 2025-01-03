@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { currentFont } from "./app/config/fonts";
 
 export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
@@ -6,7 +7,7 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          '"Inter"',
+          `"${currentFont.name}"`,
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
